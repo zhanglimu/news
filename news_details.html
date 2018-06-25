@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>游戏--[caiEX]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script src="js/echarts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/game.css">
+<link rel="stylesheet" type="text/css" href="css/news.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/game_style.css">
+        	
+       
+<style type="text/css">
+#floatPanel .ctrolPanel{width:36px;height:104px;background:#fff url(image/panel_bg.gif) no-repeat right top;border:solid 1px #ddd;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);}
+#floatPanel1 .ctrolPanel1{width:100px;height:160px;background:url(img/sign.png) no-repeat right top;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);cursor: pointer;}
+</style>
+<body>
+	<header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="home-account">
+                                    <a href="computer_game.html"><img src="img/logo.png" alt="" /></a>
+                                </div>
+                            </div>
+                            <nav class="col-md-8">
+                            	<ul>
+                            		<li class="deepred"><a href="news.html">赛事信息</a></li>
+                            		<li><a href="http://www.caiex.com/caiexWx/oauthServlet?pageName=55">计算器</a></li>
+                            		<li><a href="computer_game.html">游戏</a></li>
+                            		<li><a href="china.html">中超</a></li>
+                            		<li><a href="user.html">个人账户</a></li>
+                            		<li><a href="gifts.html">兑换商品</a></li>
+                            		<li><a href="../CAIEX_pc/index.html">公司介绍</a></li>
+                            	</ul>
+                            </nav>
+                            <div class="col-md-2">
+                                <div class="cart-info">
+                                    <span>你好：<a href="user.html"><span>托特纳姆热刺</span></a></span><br />
+                                    <span>
+                                    	<img src="img/sum.png">
+                                    	<span>6000金币</span>
+                                    </span>
+                                    <span>&nbsp&nbsp<a href="#">登录</a>/<a href="#">注册</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    <article class="container">
+        <section class="container bg">
+        	<div id="teamBody" class="col-md-8">
+	            <div class="teamNews">
+	                <div class="teamdiv clearfix">
+	                    <p class="team_img1 left">
+	                        <img src="img/Mexico.png"><sup><img src="img/set.png"/></sup><br>
+	                        <span>爱尔兰</span>
+	                    </p>
+	                    <div class="team_time1 left">
+		                    <p>
+		                        <span class="fontbold">2:1</span>
+		                    </p>
+		                    <p class="font_gray">	
+		                        <span>1-29&nbsp&nbsp13:25:26</span>
+		                    </p>
+		                    <p>	
+		                        <img id="trader" style="width: 20%;margin: 3px;" src="img/trader.png"/>
+		                    </p>
+		                </div>
+	                    <p class="team_img1 right">
+	                        <sup><img src="img/set_gray.png"/></sup><img src="img/Uruguay.png"><br>
+	                        <span> 上海绿地申花</span>
+	                    </p>
+	                </div>
+	                <div class="timeevenbox1">
+	                    <div class="timemovebox">
+	                        <div class="timemove"></div>
+	                        <div class="timenodebox">
+	                            <div class="timenode">
+	                                <span class="timenodein">
+	                                    <img class="littlein" src="img/little_gray.png" title="中场">
+	                                </span>
+	                            </div>
+	                            <div class="timenode">
+	                                <span class="timenodezhu">
+	                                    <img class="color" src="img/yellow.png">
+	                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+	                                </span>
+	                            </div>
+	                            <div class="timenode">
+	                                <span class="timenodezhu">
+	                                    <img class="color1" src="img/usual.png">
+	                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+	                                </span>
+	                            </div>
+	                            <div class="timenode">
+	                                <span class="timenodezhu">
+	                                    <img class="color2" src="img/penalty.png">
+	                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+	                                </span>
+	                            </div>
+	                            <div class="timenode">
+	                                <span class="timenodeke">
+	                                    <img class="color3" src="img/red.png">
+	                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+	                                </span>
+	                            </div>
+	                            <div class="timenode">
+	                                <span class="timenodeke">
+	                                    <img class="color4" src="img/yere.png">
+	                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+	                                </span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <span class="count01">0'</span>
+	                    <span class="count901">90'</span>
+	                </div>
+	            </div>
+	            
+	            <div class="tabs tabs-style-circlefill">
+					<nav>
+						<ul>
+							<li><a>主队</a></li>
+							<li><a>客队</a></li>
+							<li><a>阵容</a></li>
+							<li><a>赛后总结</a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-circlefill-1">
+							<ul class="news_list">
+                                <li>
+                                	<p class="left">
+	                        			<b>墨西哥:</b><br />
+	                        			<!--<span>胜平负：平/负</span><br />
+	                        			<span>比分：1-2、2-2</span><br />-->
+	                        			<span>阵型：4-3-2-1</span><br /><br />
+	                        			<span>天气：小雨</span>
+	                        		</p>
+	                        		<p class="left">
+	                        			<br />
+	                        			<span><img src="img/L.png"/><img src="img/L.png"/><img src="img/W.png"/><img src="img/D.png"/><img src="img/W.png"/></span><br /><br />
+	                        			<span>裁判：埃斯库德罗</span>
+	                        		</p>
+	                        		<p class="right">
+	                        			<br />
+	                        			<img class="data" src="img/player.png" title="队员信息" />
+					                    <img class="data1" src="img/track.png" title="队员赛迹" /><br /><br />
+					                    <img src="img/icon_star_2.png" title="很烂">
+					                    <img src="img/icon_star_2.png" title="一般">
+					                    <img src="img/icon_star_2.png" title="还好">
+					                    <img src="img/icon_star_1.png" title="较好">
+					                    <img src="img/icon_star_1.png" title="很好">
+					                    <sup>
+					                        <img src="img/doubt.png" title="五星：很好
+												                        	四星：较好
+												                        	三星：还好
+												                        	二星：一般
+												                        	一星：很烂" />
+					                    </sup>	
+					                </p>
+	                        	</li>
+	                            <li>
+	                                <p>曼彻斯特城中场纳斯里在上周末英超表现出色打进致胜球，但他并未入选曼城欧冠淘汰赛名单无缘出战。
+	                                    队长中卫孔帕尼恢复全队合练，但预计无法首发。中卫奥塔门迪在上周末英超脚踝受伤，出战成疑。
+	                                    边锋斯特林仍在养伤。上周末获轮休的亚亚·图雷、大卫·席尔瓦、克利希和德布劳内将重返首发。
+	                                </p>
+	                                <p>巴黎圣日尔曼中卫大卫·路易斯和后腰马图伊迪双双累积黄牌停赛。门将特拉普在上周末法甲受伤，
+	                                    中场帕斯托雷和维拉蒂伤愈随队出征，但预计不会首发。主帅布兰克有可能让迪马里亚回撤到中场，
+	                                    或使用斯坦博利首发。
+	                                </p>
+	                                <p>
+	                                	巴黎圣日尔曼近5场欧冠4胜1平，连续5场欧冠单场至少进2球，有望在客场力保不败。
+	                                </p>
+	                                <p>
+	                                                                      【主队伤停】：纳斯里（未报名）、边锋斯特林、中卫孔帕尼、中卫奥塔门迪
+	                                </p>
+	                            </li>
+                            </ul>
+						</section>
+						<section id="section-circlefill-2">
+							<ul class="news_list">
+                                <li>
+                                	<p class="left">
+	                        			<b>爱尔兰:</b><br />
+	                        			<!--<span>胜平负：平/负</span><br />
+	                        			<span>比分：1-2、2-2</span><br />-->
+	                        			<span>阵型：4-3-2-1</span><br /><br />
+	                        			<span>天气：小雨</span>
+	                        			
+	                        		</p>
+	                        		<p class="left">
+	                        			<br />
+	                        			<span><img src="img/W.png"/><img src="img/L.png"/><img src="img/W.png"/><img src="img/D.png"/><img src="img/W.png"/></span><br /><br />
+	                        			<span>裁判：塞巴蒂安</span>
+	                        		</p>
+	                        		<p class="right">
+	                        			<br />
+	                        			<img class="data" src="img/player.png" title="队员信息" />
+					                    <img class="data1" src="img/track.png" title="队员赛迹" /><br /><br />
+					                    <img src="img/icon_star_2.png" title="很烂">
+					                    <img src="img/icon_star_2.png" title="一般">
+					                    <img src="img/icon_star_2.png" title="还好">
+					                    <img src="img/icon_star_1.png" title="较好">
+					                    <img src="img/icon_star_1.png" title="很好">
+					                    <sup>
+					                        <img src="img/doubt.png" title="五星：很好
+												                        	四星：较好
+												                        	三星：还好
+												                        	二星：一般
+												                        	一星：很烂" />
+					                    </sup>	
+					                </p>
+	                        	</li>
+	                            <li>
+	                                <p>曼彻斯特城中场纳斯里在上周末英超表现出色打进致胜球，但他并未入选曼城欧冠淘汰赛名单无缘出战。
+	                                    队长中卫孔帕尼恢复全队合练，但预计无法首发。中卫奥塔门迪在上周末英超脚踝受伤，出战成疑。
+	                                    边锋斯特林仍在养伤。上周末获轮休的亚亚·图雷、大卫·席尔瓦、克利希和德布劳内将重返首发。
+	                                </p>
+	                                <p>巴黎圣日尔曼中卫大卫·路易斯和后腰马图伊迪双双累积黄牌停赛。门将特拉普在上周末法甲受伤，
+	                                    中场帕斯托雷和维拉蒂伤愈随队出征，但预计不会首发。主帅布兰克有可能让迪马里亚回撤到中场，
+	                                    或使用斯坦博利首发。
+	                                </p>
+	                                <p>
+	                                	巴黎圣日尔曼近5场欧冠4胜1平，连续5场欧冠单场至少进2球，有望在客场力保不败。
+	                                </p>
+	                                <p>
+									        【客队伤停】：中卫大卫·路易斯（停赛）、后腰马图伊迪（停赛）、门将特拉普、中场维拉蒂、中场帕斯托雷
+	                                </p>
+	                            </li>
+                            </ul>
+						</section>
+						<section id="section-circlefill-3">
+							<ul class="news_list">
+                                <!--<li class="explaining">
+	                        		<img src="img/yellow.png">&nbsp<span>黄牌</span>&nbsp&nbsp
+					                <img src="img/red.png">&nbsp<span>红牌</span>&nbsp&nbsp
+					                <img src="img/usual.png">&nbsp<span>普通球</span>&nbsp&nbsp
+					                <img src="img/penalty.png">&nbsp<span>点球</span>&nbsp&nbsp
+					                <img src="img/yere.png">&nbsp<span>黄变红</span>
+					                <img src="img/put_down.png">&nbsp<span>换下</span>
+					                <img src="img/put_on.png">&nbsp<span>换上</span>
+	                        	</li>-->
+	                        	<li class="unitba">
+	                        		<ul class="col-md-6 unit">
+		                                <li class="checkboxFive">
+			                        		<b>主队首发阵容</b>
+			                        		<input type="checkbox" name="" id="checkboxFiveInput" value="主队阵容" />
+			                        		<label for="checkboxFiveInput"></label>
+			                        		<span>13:25:00</span>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">18</span>
+			                        		<span>埃斯库德罗</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">4</span>
+			                        		<span>基祖华克</span>
+			                        		<em>中场 </em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">1</span>
+			                        		<span>塞尔吉奥</span>
+			                        		<em></em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">14</span>
+			                        		<span>塞巴斯蒂安</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">19</span>
+			                        		<span>巴内加</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">3</span>
+			                        		<span>拉米</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">16</span>
+			                        		<span>法斯奧</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">24</span>
+			                        		<span>洛伦特</span>
+			                        		<em>前锋</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">23</span>
+			                        		<span>科克</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">7</span>
+			                        		<span>科隆.德里</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">11</span>
+			                        		<span>穆尼奥斯</span>
+			                        		<em></em>
+			                        	</li>
+		                            </ul>
+		                            <ul class="col-md-6 unit">
+		                                <li class="checkboxFive1">
+			                        		<b>客队首发阵容</b>
+			                        		<input type="checkbox" name="" id="checkboxFiveInput1" value="客队阵容" />
+			                        		<label for="checkboxFiveInput1"></label>
+			                        		<span>13:25:00</span>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">18</span>
+			                        		<span>埃斯库德罗</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">4</span>
+			                        		<span>基祖华克</span>
+			                        		<em>中场 </em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">1</span>
+			                        		<span>塞尔吉奥</span>
+			                        		<em></em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">14</span>
+			                        		<span>塞巴斯蒂安</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">19</span>
+			                        		<span>巴内加</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">3</span>
+			                        		<span>拉米</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">16</span>
+			                        		<span>法斯奧</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">24</span>
+			                        		<span>洛伦特</span>
+			                        		<em>前锋</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">23</span>
+			                        		<span>科克</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">7</span>
+			                        		<span>科隆.德里</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">11</span>
+			                        		<span>穆尼奥斯</span>
+			                        		<em></em>
+			                        	</li>
+		                            </ul>
+	                        	</li>
+	                        	<li class="unitba">
+	                        		<ul class="col-md-6 unit">
+		                                <li class="checkboxFive">
+			                        		<b>主队替补阵容</b>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">18</span>
+			                        		<span>埃斯库德罗</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">4</span>
+			                        		<span>基祖华克</span>
+			                        		<em>中场 </em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">1</span>
+			                        		<span>西野贵治</span>
+			                        		<em></em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">14</span>
+			                        		<span>小椋祥平</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">23</span>
+			                        		<span>科克</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">7</span>
+			                        		<span>小椋祥平</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_red">11</span>
+			                        		<span>穆尼奥斯</span>
+			                        		<em></em>
+			                        	</li>
+		                            </ul>
+		                            <ul class="col-md-6 unit">
+		                                <li class="checkboxFive1">
+			                        		<b>客队替补阵容</b>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">18</span>
+			                        		<span>大森晃太郎</span>
+			                        		<em>后卫</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">4</span>
+			                        		<span>桐田和繁</span>
+			                        		<em>中场 </em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">1</span>
+			                        		<span>镰田次郎</span>
+			                        		<em></em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">14</span>
+			                        		<span>栗泽僚一</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">19</span>
+			                        		<span>太田彻郎</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">3</span>
+			                        		<span>拉米</span>
+			                        		<em>中场</em>
+			                        	</li>
+			                        	<li>
+			                        		<span id="line_green">16</span>
+			                        		<span>法斯奧</span>
+			                        		<em>后卫</em>
+			                        	</li>
+		                            </ul>
+	                        	</li>
+                            </ul>
+						</section>
+						<section id="section-circlefill-4">
+							<ul class="news_list">
+                                <li>
+	                                <p>塞维利亚上周末客场1比2被巴伦西亚绝杀，遭遇联赛3连败，通过联赛排名争取下赛季欧冠席位的希望已经相当渺茫。
+	                                	主帅埃梅里并没有让参加了欧罗巴联赛首回合的前锋加梅罗、中场比托洛和恩宗齐等人首发，
+	                                	其中加梅罗仅在第60分钟替补登场并打入扳平进球。该战停赛的中场雷耶斯、后卫马里亚诺周中解禁复出，
+	                                	特雷穆利纳、卡里索等守将继续伤缺。
+	                                </p>
+	                                <p>毕尔巴鄂上周末主场1比0小胜巴列卡诺，终尝近3轮联赛首胜。头号射手阿杜里斯、后腰圣何塞、
+	                                	贝尼亚特等参加了欧战首回合的主力球员都只是在下半场替补披挂。锋线小将I·威廉姆斯第61分钟打入全场唯一进球，
+	                                	斩获本季西甲个人第8球。欧战首回合停赛的中场劳尔·加西亚此役解禁，后卫拉波尔特因右脚踝骨折恐提前告别本赛季。
+	                                </p>
+	                                <p>
+	                                	塞维利亚的各项赛事主场17连胜纪录在上一个主场被皇家社会终结，同时也是该队自去年11月初欧冠小组赛不
+	                                	敌曼城后的第2次主场落败。毕尔巴鄂最近14次做客皮斯胡安球场仅获1胜2平11负，此役恐怕难逃被塞维利亚双杀的厄运。
+	                                </p>
+	                                <p>
+									        【主队伤停】：后卫特雷穆利纳、后卫卡里索、后卫安德雷奥烈
+	                                </p>
+	                                <p>
+									        【客队伤停】：后卫拉波尔特、前锋萨宾
+	                                </p>
+	                            </li>
+                            </ul>	
+						</section>
+						
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</div>
+	        <div class="partner col-md-4">
+            	<ul>
+            		<li><a href="SI.html"><img src="img/SI/partner.png"/></a></li>
+            	</ul>
+            	<div class="promote">
+	            	<p>
+	                    <span>其他推荐</span>
+	                    <img class="refreshing right" src="img/refresh.png">
+	                </p>
+	                <span id="gray_left">
+	                	<img src="img/grayleft.png"/>
+	                </span>
+	            	<ul class="left contentUl">
+	            		<li><a href="">周二<em> 比利亚雷亚尔 vs 赫塔菲</em></a></li>
+	            		<li><a href="">周二<em> 拉科鲁尼亚 vs 拉斯帕尔马斯</em></a></li>
+	            		<li><a href="">周三<em> 西汉姆联 vs 马德里竞技</em></a></li>
+	            		<li><a href="">周三<em> 顿涅茨克矿工 vs 布拉加</em></a></li>
+	            		<li><a href="">周四<em> 山东鲁能 vs 延边富德</em></a></li>
+	            		<li><a href="">周五<em> 梅州客家 vs 湖南湘涛</em></a></li>
+	            	</ul>
+	            	<ul class="left contentUl">
+	            		<li><a href="">周二<em> 马德里竞技比利亚雷亚尔 vs 赫塔菲</em></a></li>
+	            		<li><a href="">周二<em> 顿涅茨克矿工拉科鲁尼亚 vs 拉斯帕尔马斯</em></a></li>
+	            		<li><a href="">周三<em> 西汉姆联 vs 比利亚雷亚尔</em></a></li>
+	            		<li><a href="">周三<em> 拉科鲁尼亚 vs 布拉加</em></a></li>
+	            		<li><a href="">周四<em> 山东鲁能 vs 延边富德</em></a></li>
+	            		<li><a href="">周五<em> 梅州客家 vs 湖南湘涛</em></a></li>
+	            	</ul>
+	            	<span id="gray_right">
+	            		<img src="img/grayright.png"/>
+	            	</span>
+	            </div>
+            </div>
+        </section>
+    </article>
+            <footer>
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="subscribe-form">
+                                    <span>找我们：</span>
+                                    <form method="get" class="subscribeForm">
+                                        <input id="subscribe" type="text" />
+                                        <input type="submit" id="submitButton" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about">
+                                    <h4 class="footer-title">您的疑问</h4>
+                                    <p>这可行么 
+                                    <br><br>能不能<a rel="nofollow" href="#">分红</a>给合作伙伴</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shop-list">
+                                    <h4 class="footer-title">特色分类</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>可退票</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>可查询票价</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>消费者无亏损</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>实时更新价格</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="more-info">
+                                    <h4 class="footer-title">更多信息</h4>
+                                    <p></p>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>010-58815381</li>
+                                        <li><i class="fa fa-globe"></i>京ICP备15032311号</li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">&copy2014-2015&nbsp&nbspCaiex&nbspRecycle版权所有</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!-- 遮罩层 -->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="check_overlay" style="display:none;"></div>
+                <div class="box1" id="check_box" style="text-align:center;">
+                    <a class="boxclose1" id="check_boxclose"></a>
+                    <p class="imgbg"><img src="img/sign1.png"></p>
+                    <p class="signbutton"><button>签&nbsp&nbsp&nbsp&nbsp到</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--队员信息-->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="player_overlay" style="display:none;"></div>
+                <div class="box2" id="player_box" style="text-align:center;">
+                    <a class="boxclose2" id="player_boxclose"></a>
+                    <h4>曼彻斯特联队</h4>
+                    <span id="sleBG1">   
+						<span id="sleHid1">  
+			                <select class="filter1">
+			                	<option value="2015/2016" selected="selected">2015/2016</option>
+			                	<option value="2014/2015">2014/2015</option>
+			                	<option value="2013/2014">2013/2014</option>
+			                	<option value="2012/2013">2012/2013</option>
+			                	<option value="2011/2012">2011/2012</option>
+			                	<option value="2010/2011">2010/2011</option>
+			                	<option value="2009/2010">2009/2010</option>
+			                </select>
+		                </span>   
+					</span>
+					<div class="selectdrop1">
+					  <div id="tab_content1">
+					    <div id="table-container1">
+					      <div class="table-top1">
+					        <div class="table-mask1">
+					          <table>
+					            <tbody>
+					              <tr>
+					              	<td class="firsttd">
+						                <div>player</div>
+						            </td>
+					              	<td class="othertd">
+						                <div>pos</div>
+						            </td>
+					              	<td class="othertd">
+						                <div>games</div>
+						            </td>
+					              	<td class="othertd">
+						                <div>starts</div>
+						            </td>
+					              	<td class="othertd">
+						                <div>goals</div>
+						            </td>
+					              	<td class="othertd">
+						                <div>rc</div>
+						            </td>
+					              	<td class="othertd">
+						                <div>yr</div>
+						            </td>
+					              </tr>
+					            </tbody>
+					          </table>
+					        </div>
+					      </div>
+					      <div class="table-right1">
+					        <table>
+					          <tbody>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>null</div>
+					              </td>
+					              <td class="othertd">
+					                <div>null</div>
+					              </td>
+					              <td class="othertd">
+					                <div>null</div>
+					              </td>
+					              <td class="othertd">
+					                <div>null</div>
+					              </td>
+					              <td class="othertd">
+					                <div>null</div>
+					              </td>
+					              <td class="othertd">
+					                <div>null</div>
+					              </td>
+					              <td class="othertd">
+					                <div>null</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					            <tr id="player">
+					              <td class="firsttd">
+					                <div>东口顺昭</div>
+					              </td>
+					              <td class="othertd">
+					                <div>(def)</div>
+					              </td>
+					              <td class="othertd">
+					                <div>42</div>
+					              </td>
+					              <td class="othertd">
+					                <div>5</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>0</div>
+					              </td>
+					              <td class="othertd">
+					                <div>7</div>
+					              </td>
+					            </tr>
+					          </tbody>
+					        </table>
+					      </div>
+					    </div>
+					</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--队员赛迹-->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="track_overlay" style="display:none;"></div>
+                <div class="box3" id="track_box" style="text-align:center;">
+                    <a class="boxclose2" id="track_boxclose"></a>
+                    <h4>比利亚雷亚尔</h4>
+                    <p>
+                    	<span id="sleBG1">   
+							<span id="sleHid1">  
+				                <select class="filter1">
+				                	<option value="全部" selected="selected">全部</option>
+				                	<option value="英超联赛">英超联赛</option>
+				                	<option value="足总杯">足总杯</option>
+				                	<option value="联赛杯">联赛杯</option>
+				                	<option value="冠军">冠军</option>
+				                </select>
+			                </span>   
+						</span> 
+	                    <span id="sleBG1">   
+							<span id="sleHid1">  
+				                <select class="filter1">
+				                	<option value="2015/2016" selected="selected">2015/2016</option>
+				                	<option value="2014/2015">2014/2015</option>
+				                	<option value="2013/2014">2013/2014</option>
+				                	<option value="2012/2013">2012/2013</option>
+				                	<option value="2011/2012">2011/2012</option>
+				                	<option value="2010/2011">2010/2011</option>
+				                	<option value="2009/2010">2009/2010</option>
+				                	<option value="2008/2009">2008/2009</option>
+				                	<option value="2007/2008">2007/2008</option>
+				                </select>
+			                </span>   
+						</span>
+						<!--<span id="switch">
+							<a href="#" class="toggle toggle--on"></a>
+							<a href="#" class="toggle1 toggle1--on"></a>
+						</span>-->
+                    </p>
+                    <div class="selectdrop1">
+					  <div id="tab_content">
+					    <div id="table-container">
+					      <div class="table-top">
+					        <div class="table-mask">
+					          <table>
+					            <tbody>
+					              <tr>
+					              	<td>
+						                <div>Position</div>
+						            </td>
+					              	<td id="gk">
+						                <div>Gk</div>
+						            </td>
+					              	<td>
+						                <div>Att</div>
+						            </td>
+					              	<td id="att">
+						                <div>Att</div>
+						            </td>
+					              	<td>
+						                <div>Mid</div>
+						            </td>
+					              	<td>
+						                <div>Mid</div>
+						            </td>
+					              	<td>
+						                <div>Mid</div>
+						            </td>
+					              	<td id="mid">
+						                <div>Mid</div>
+						            </td>
+					              	<td>
+						                <div>Def</div>
+						            </td>
+					              	<td>
+						                <div>Def</div>
+						            </td>
+					              	<td id="def">
+					                	<div>Def</div>
+					              	</td>
+					              </tr>
+					              <tr>
+					              	<td>
+						                <div>Player</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+						                <div>李相浩</div>
+						            </td>
+					              	<td>
+					                	<div>李相浩</div>
+					              	</td>
+					              </tr>
+					            </tbody>
+					          </table>
+					        </div>
+					      </div>
+					      <!--<div class="table-left">
+					        <div class="table-mask">
+					          <table>
+					            <tbody>
+					              <tr>
+					                <td>
+					                  <div>Position</div>
+					                </td>
+					                <td>
+					                  <div>Player</div>
+					                </td>
+					                <td>
+					                  <div><span>LeedsUnited</span><br /><span>3-2</span><img src="img/D.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>ddlesbrofdgdfg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>sbrofdgdfg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>Middlesbrofdgdfg</span><br /><span>1-2</span><img src="img/W.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>rofdgdfg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>Middlfdgdfg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>Middlesbrofdgdfg</span><br /><span>1-2</span><img src="img/W.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>Middleofdgdfg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>Middlesbrofdgdfg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					                <td>
+					                  <div><span>Middlesg</span><br /><span>1-2</span><img src="img/L.png"></div>
+					                </td>
+					              </tr>
+					            </tbody>
+					          </table>
+					        </div>
+					      </div>-->
+					      <div class="table-right">
+					        <table>
+					          <tbody>
+					            <tr>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					            </tr>
+					            <tr>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					              <td>
+					                <div>null</div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>切尔西</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>AC米兰</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>利物浦</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/D.png"><img src="img/pu_on.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"><img src="img/pu_down.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>尤文图斯</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>佛罗伦萨</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>LeedsUnited</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>巴伦西亚</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>皇家马德里</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>LeedsUnited</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>国际米兰</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					            <tr name="tr">
+					              <td>
+					                <div><span>拉齐奥</span><br /><span>3-2</span><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/W.png"><img src="img/red.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div><img class="yes" src="img/yes.png"><img src="img/D.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/yellow.png"></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div></div>
+					              </td>
+					              <td>
+					                <div><img src="img/L.png"></div>
+					              </td>
+					            </tr>
+					          </tbody>
+					        </table>
+					      </div>
+					    </div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--操盘手推荐-->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="trader_overlay" style="display:none;"></div>
+                <div class="box4" id="trader_box" style="text-align:center;padding: 1%;">
+                    <a class="boxclose1" id="trader_boxclose"></a>
+                    <h4>操盘手推荐</h4>
+                    <p class="percentage">
+                    	<span style="background: #f89d34;"><i>胜</i><em>50%</em></span>
+                    	<span style="background: #6ac07f;"><i>平</i><em>30%</em></span>
+                    	<span style="background: #f76766;"><i>负</i><em>10%</em></span>
+                    </p>
+                    <div class="">
+		                <p>
+		                    <span>赔率变化曲线</span>
+		                </p>
+		                <div id="main" style="height:300px;"></div>
+		                <script type="text/javascript">
+		                    // 基于准备好的dom，初始化echarts实例
+		                    var myChart = echarts.init(document.getElementById('main'));
+		
+		                    // 指定图表的配置项和数据
+		                    var option = {
+		                        title : {
+		                            text: '主胜',
+		                            subtext: ''
+		                        },
+		                        tooltip : {
+		                            trigger: 'axis'
+		                        },
+		                        legend: {
+		                            data:['赔率最高','赔率最低']
+		                        },
+		                        xAxis : [
+		                            {
+		                                type : 'category',
+		                                boundaryGap : false,
+		                                data : ['0:0','15:0','30:0','45:0','60:0','75:0','90:0']
+		                            }
+		                        ],
+		                        yAxis : [
+		                            {
+		                                type : 'value',
+		                                axisLabel : {
+		                                    formatter: '{value} '
+		                                }
+		                            }
+		                        ],
+		                        series : [
+		                            {
+		                                name:'',
+		                                type:'line',
+		                                data:[1, -2, 2, 5, 3, 2, 0],
+		                                markPoint : {
+		                                    data : [
+		                                        {name : '', value : -2, xAxis: 1, yAxis: -1.5}
+		                                    ]
+		                                },
+		                                markLine : {
+		                                    data : [
+		                                        {type : 'average', name : '平均值'}
+		                                    ]
+		                                }
+		                            }
+		                        ]
+		                    };
+		                    // 使用刚指定的配置项和数据显示图表。
+		                    myChart.setOption(option);
+		                </script>
+		            </div>
+		            <div class="clearfix">
+	                    <p class="left">
+		                    <span class="left" style="margin: 12px 10px;">玩法:</span>
+		                    <span id="sleBG1">   
+								<span id="sleHid1">  
+					                <select class="filter1">
+					                	<option value="胜平负" selected="selected">胜平负</option>
+					                	<option value="让球胜平负">让球胜平负</option>
+					                </select>
+				                </span>   
+							</span>
+	                    </p>
+	                    <p class="left">
+		                    <span class="left" style="margin: 12px 10px;">庄家:</span>
+		                    <span id="sleBG1">   
+								<span id="sleHid1">  
+					                <select class="filter1">
+					                	<option value="亚盘" selected="selected">亚盘</option>
+					                	<option value="欧盘">欧盘</option>
+					                	<option value="中盘">中盘</option>
+					                </select>
+				                </span>   
+							</span>
+	                    </p>
+	                    <p class="right" style="margin: 12px 10px;">
+		                    <span>总资金:</span>
+		                    <input type="text" name="" id="type" value="1000币" />
+	                    </p>
+	                    
+	                    <table id="odds" border="1" cellspacing="" cellpadding="">
+	                    	<tr>
+	                    		<th></th>
+	                    		<th>胜</th>
+	                    		<th>平</th>
+	                    		<th>负</th>
+	                    	</tr>
+	                    	<tr class="oddss">
+	                    		<td>赔率</td>
+	                    		<td><input type="text" name="" id="" value="0.23" /></td>
+	                    		<td><input type="text" name="" id="" value="25.5" /></td>
+	                    		<td><input type="text" name="" id="" value="0.89" /></td>
+	                    	</tr>
+	                    	<tr class="telling">
+	                    		<td>建议投注</td>
+	                    		<td>120</td>
+	                    		<td>500</td>
+	                    		<td>不投注</td>
+	                    	</tr>
+	                    </table>
+		            </div>
+                    <p class="analysis">
+                    	<span>1.对于穆勒并没有首发，而是在板凳上坐了70分钟这件事，希斯菲尔德说：“这对我来说是件非常惊讶的事情"</span>
+                    	<span>2.在非常重要的比赛中，他们几乎是不可被替代的。但瓜迪奥拉是一名大胆的教练。</span>
+                    	<span>3.穆勒年仅20岁，只是个普通的拜仁青训球员。六年过后，穆勒成为了一名领袖和成熟的球星。</span>
+                    	<span>4.本赛季，穆勒一共为拜仁出场46次，交出了31球10助攻的数据。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 悬浮二维码 -->
+    <div id="floatPanel">
+        <div class="ctrolPanel" style="left:10px;">
+            <a class="arrow" href="#"><span>顶部</span></a>
+            <a class="qrcode" href="#"><span>微信二维码</span></a>
+            <a class="arrow" href="#"><span>底部</span></a>
+        </div>
+        <div class="popPanel" style="left:50px;">
+            <div class="popPanel-inner">
+                <div class="qrcodePanel"><img src="image/helloweba.png" /><p>扫描二维码用手机看文章</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- 签到 -->
+    <div id="floatPanel1">
+        <div class="ctrolPanel1" style="right:10px;">
+        </div>
+    </div>
+    
+    <script src="js/cbpFWTabs.js"></script>
+<script>
+//圆tab
+	(function() {
+
+		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+			new CBPFWTabs( el );
+		});
+
+	})();
+
+//table表头不动
+$(function(argument) {
+        var container = $("#table-container"),
+            ltTable = container.find(".table-lt"),
+            topTable = container.find(".table-top"),
+            leftTable = container.find(".table-left"),
+            rightTable = container.find(".table-right"),
+  
+            containerWidth = 0,
+            containerHeight =0,
+  
+            ltTableWidth = 0,
+            ltTableHeight = 0,
+  
+            widthJson = {},
+  
+            timerLT = null;
+  
+        ltTableWidth = ltTable.width();
+        ltTable.width(ltTableWidth);
+        topTable.css("marginLeft",ltTableWidth);
+        leftTable.width(ltTableWidth);
+        rightTable.css("marginLeft",ltTableWidth);
+        ltTableHeight = ltTable.height();
+        leftTable.css("marginTop",ltTableHeight+"px");
+        rightTable.css("marginTop",ltTableHeight+"px");
+  
+        containerHeight = container.height();
+        containerWidth = container.width();
+        topTable.width(containerWidth - ltTableWidth - (container.innerWidth() - container[0].clientWidth));
+        leftTable.height(containerHeight - ltTableHeight - (container.innerHeight() - container[0].clientHeight));
+  
+        // figure out the width of each DIV in TD  --start
+        function setDivWidth(obj){
+          $(obj).find("div").each(function(index){
+            if(!widthJson[index]){
+              widthJson[index] = 0;
+            }
+            if(widthJson[index]<$(this).width()) {
+              widthJson[index] = $(this).width();
+            }
+          });
+        }
+        topTable.find("tr").each(function(){
+          setDivWidth(this);
+        });
+        rightTable.find("tr").each(function(){
+          setDivWidth(this);
+        });
+  
+        topTable.find("tr:first div").each(function(index){
+          $(this).width(widthJson[index]);
+        });
+        rightTable.find("tr:first div").each(function(index){
+          $(this).width(widthJson[index]);
+        });
+        // figure out the width of each DIV in TD  --end
+  
+        container.scroll(function(){
+          var currentScrollTop = $(this).scrollTop(),
+              currentScrollLeft = $(this).scrollLeft();
+          topTable.find(".table-mask").css("left", -currentScrollLeft+"px");
+          leftTable.find(".table-mask").css("top", -currentScrollTop+"px");
+  
+        });
+  
+        $(document).scroll(function(){
+          var currentScrollTop = $(this).scrollTop(),
+              currentScrollLeft = $(this).scrollLeft();
+          ltTable.css("marginTop", -currentScrollTop+"px");
+          ltTable.css("marginLeft", -currentScrollLeft+"px");
+          topTable.css("marginTop", -currentScrollTop+"px");
+          topTable.css("marginLeft", ltTableWidth - currentScrollLeft+"px");
+          leftTable.css("marginTop", ltTableHeight - currentScrollTop+"px");
+          leftTable.css("marginLeft", -currentScrollLeft+"px");
+  
+        });
+  
+        // for IE, when window's scrollbar is moved, keep ltTable,leftTable,topTable in the correct position
+        $(window).resize(function(){
+          $(document).scroll();
+        });
+  
+        //reset the width of topTable and the height of leftTable when container's size is changed, if container's size is fixed, you can skip the code below.
+        timerLT = setInterval(function(){
+          if(containerWidth != container.width() || containerHeight != container.height()){
+            topTable.width(container.width() - ltTableWidth - (container.innerWidth() - container[0].clientWidth));
+            leftTable.height(container.height() - ltTableHeight - (container.innerHeight() - container[0].clientHeight));
+  
+            containerWidth = container.width();
+            containerHeight = container.height();
+  
+            container.scroll();// for IE
+              
+          };
+                     
+        },0);
+  
+      });
+</script> 
+</body>
+</html>
+

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>游戏--[caiEX]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script src="js/echarts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/game_style.css">
+        
+<style type="text/css">
+#floatPanel .ctrolPanel{width:36px;height:104px;background:#fff url(image/panel_bg.gif) no-repeat right top;border:solid 1px #ddd;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);}
+#floatPanel1 .ctrolPanel1{width:100px;height:160px;background:url(img/sign.png) no-repeat right top;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);cursor: pointer;}
+</style>
+</script>
+<body>
+	<header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="home-account">
+                                    <a href="computer_game.html"><img src="img/logo.png" alt="" /></a>
+                                </div>
+                            </div>
+                            <nav class="col-md-8">
+                            	<ul>
+                            		<li><a href="news.html">赛事信息</a></li>
+                            		<li><a href="http://www.caiex.com/caiexWx/oauthServlet?pageName=55">计算器</a></li>
+                            		<li class="deepred"><a href="computer_game.html">游戏</a></li>
+                            		<li><a href="china.html">中超</a></li>
+                            		<li><a href="user.html">个人账户</a></li>
+                            		<li><a href="gifts.html">兑换商品</a></li>
+                            		<li><a href="../CAIEX_pc/index.html">公司介绍</a></li>
+                            	</ul>
+                            </nav>
+                            <div class="col-md-2">
+                                <div class="cart-info">
+                                    <span>你好：<a href="user.html"><span>托特纳姆热刺</span></a></span><br />
+                                    <span>
+                                    	<img src="img/sum.png">
+                                    	<span>6000金币</span>
+                                    </span>
+                                    <span>&nbsp&nbsp<a href="#">登录</a>/<a href="#">注册</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    <article class="container">
+        <section class="container bg">
+            <div class="team col-md-6">
+                <div class="teamdiv clearfix">
+                    <p class="team_img left">
+                        <img src="img/Uruguay.png"><br>
+                        <span>爱尔兰</span>
+                    </p>
+                    <p class="team_time left">
+                        <span class="fontbold">vs</span>
+                        <!-- <span class="font">2&nbsp&nbsp:&nbsp&nbsp4</span> -->
+                        <span class="font_color">进行中</span>
+                        <span>60'&nbsp&nbsp下半场</span>
+                    </p>
+                    <p class="team_img right">
+                        <img src="img/Mexico.png"><br>
+                        <span>爱尔兰</span>
+                    </p>
+                </div>
+                <div class="timeevenbox">
+                    <div class="timemovebox">
+                        <div class="timemove"></div>
+                        <div class="timenodebox">
+                            <div class="timenode">
+                                <span class="timenodein">
+                                    <img class="littlein" src="img/little_gray.png" title="中场">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color" src="img/yellow.png">
+                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color1" src="img/usual.png">
+                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color2" src="img/penalty.png">
+                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodeke">
+                                    <img class="color3" src="img/red.png">
+                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodeke">
+                                    <img class="color4" src="img/yere.png">
+                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="count0">0'</span>
+                    <span class="count90">90'</span>
+                </div>
+                <div>
+                    <img src="img/yellow.png">&nbsp<span>黄牌</span>&nbsp&nbsp
+                    <img src="img/red.png">&nbsp<span>红牌</span>&nbsp&nbsp
+                    <img src="img/usual.png">&nbsp<span>普通球</span>&nbsp&nbsp
+                    <img src="img/penalty.png">&nbsp<span>点球</span>&nbsp&nbsp
+                    <img src="img/yere.png">&nbsp<span>黄变红</span>
+                </div>
+            </div>
+            <div class="existing col-md-6">
+                <p>
+                    <span>现有彩票</span>
+                    <img class="refresh right" src="img/refresh.png">
+                </p>
+                <div>
+                     <ul id="tab">
+                        <li>胜平负</li>
+                        <li>让<span style="color:red;">(-1)</span>胜平负</li>
+                    </ul>
+                    <div id="tab_content">
+                        <div>
+                            <ul class="list">
+                                <li>
+                                    <span>主胜</span>
+                                    <span class="marrow">赔率：17.36<img class="uparrow" src="img/up.png"></span>
+                                    <span>中奖额：32.06</span>
+                                    <button name="keep_activator">买入</button>
+                                </li>
+                                <li>
+                                    <span>平</span>
+                                    <span class="marrow">赔率：17.36<img class="downarrow" src="img/down.png"></span>
+                                    <span>中奖额：32.06</span>
+                                    <button name="keep_activator">买入</button>
+                                </li>
+                                <li>
+                                    <span>主负</span>
+                                    <span class="marrow">赔率：17.36<img class="uparrow" src="img/up.png"></span>
+                                    <span>中奖额：32.06</span>
+                                    <button name="keep_activator">买入</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list">
+                                <li>
+                                    <span>主胜</span>
+                                    <span class="marrow">赔率：17.36<img class="downarrow" src="img/down.png"></span>
+                                    <span>中奖额：32.06</span>
+                                    <button name="keep_activator">买入</button>
+                                </li>
+                                <li>
+                                    <span>平</span>
+                                    <span class="marrow">赔率：17.36<img class="downarrow" src="img/down.png"></span>
+                                    <span>中奖额：32.06</span>
+                                    <button name="keep_activator">买入</button>
+                                </li>
+                                <li>
+                                    <span>主负</span>
+                                    <span class="marrow">赔率：17.36<img class="uparrow" src="img/up.png"></span>
+                                    <span>中奖额：32.06</span>
+                                    <button name="keep_activator">买入</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="balance col-md-6">
+                <p>
+                    <span>持有订单</span>
+                    <img class="refreshing right" src="img/refresh.png">
+                </p>
+                <div>
+                    <b>
+                        <span>doing豪美</span>
+                        <span class="right">本场余额：2536.2</span>
+                    </b>
+                    <table class="table" border="1">
+                        <tbody>
+                            <tr class="first">
+                                <td>持有方案</td>
+                                <td>买入价</td>
+                                <td>报价</td>
+                                <td>结果</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td>平<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">15.30<img class="uparrow" src="img/up.png"></td>
+                                <td>命中</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>平<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">15.30<img class="uparrow" src="img/up.png"></td>
+                                <td>失败</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>让球(-1)胜<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">----<img class="downarrow" src="img/down.png"></td>
+                                <td>未计算</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>平<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">15.30<img class="uparrow" src="img/up.png"></td>
+                                <td>失败</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>让球(-1)胜<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">----<img class="downarrow" src="img/down.png"></td>
+                                <td>未计算</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>平<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">15.30<img class="uparrow" src="img/up.png"></td>
+                                <td>失败</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>让球(-1)胜<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">----<img class="downarrow" src="img/down.png"></td>
+                                <td>未计算</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                            <tr>
+                                <td>平<!--<span>@2.6</span>--></td>
+                                <td>0.25</td>
+                                <td class="farrow">15.30<img class="uparrow" src="img/up.png"></td>
+                                <td>失败</td>
+                                <td class="last" name="sell_activator"><button>售出</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="change col-md-6">
+                <p>
+                    <span>赔率变化曲线</span>
+                </p>
+                <div id="main" style="height:300px;"></div>
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChart = echarts.init(document.getElementById('main'));
+
+                    // 指定图表的配置项和数据
+                    var option = {
+                        title : {
+                            text: '主胜',
+                            subtext: ''
+                        },
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data:['赔率最高','赔率最低']
+                        },
+                        xAxis : [
+                            {
+                                type : 'category',
+                                boundaryGap : false,
+                                data : ['0:0','15:0','30:0','45:0','60:0','75:0','90:0']
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value',
+                                axisLabel : {
+                                    formatter: '{value} '
+                                }
+                            }
+                        ],
+                        series : [
+                            {
+                                name:'',
+                                type:'line',
+                                data:[1, -2, 2, 5, 3, 2, 0],
+                                markPoint : {
+                                    data : [
+                                        {name : '', value : -2, xAxis: 1, yAxis: -1.5}
+                                    ]
+                                },
+                                markLine : {
+                                    data : [
+                                        {type : 'average', name : '平均值'}
+                                    ]
+                                }
+                            }
+                        ]
+                    };
+                    // 使用刚指定的配置项和数据显示图表。
+                    myChart.setOption(option);
+                </script>
+            </div>
+            <div class="parade col-md-6">
+                <p>
+                    <span>排行榜</span>
+                </p>
+                <div id="news">
+                    <ul>
+                        <li class="li_fist">
+                            <span class="user left"><img src="img/1.jpg"><i>ailidong</i><img class="crown" src="img/gold.png" /></span>
+                            <span class="big left">01<img style="width: 30%;" src="img/sheng.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li>
+                            <span class="user left"><img src="img/2.jpg"><i>wangshengyu</i><img class="crown" src="img/silver.png" /></span>
+                            <span class="big left">02<img style="width: 30%;" src="img/ping.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li>
+                            <span class="user left"><img src="img/3.jpg"><i>zhuchongyao</i><img class="crown" src="img/copper.png" /></span>
+                            <span class="big left">03<img style="width: 30%;" src="img/jiang.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li class="myself">
+                            <span class="user left"><img src="img/0.jpg"><i>longmin</i></span>
+                            <span class="big left">04<img style="width: 30%;" src="img/ping.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li>
+                            <span class="user left"><img src="img/head.png"><i>zhangye</i></span>
+                            <span class="big left">05<img style="width: 30%;" src="img/ping.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li>
+                            <span class="user left"><img src="img/1.jpg"><i>zhangye</i></span>
+                            <span class="big left">06<img style="width: 30%;" src="img/sheng.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li>
+                            <span class="user left"><img src="img/2.jpg"><i>zhangye</i></span>
+                            <span class="big left">07<img style="width: 30%;" src="img/ping.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                        <li>
+                            <span class="user left"><img src="img/3.jpg"><i>zhangye</i></span>
+                            <span class="big left">08<img style="width: 30%;" src="img/jiang.png" /></span>
+                            <span class="money left"><img src="img/sum.png"><i>1.25万</i></span>
+                            <span class="money left"><img src="img/purse.png"><i>6.25万</i></span>
+                            <span class="money left"><img src="img/piggy.png"><i>7.5万</i></span>
+                            <span class="reward right">奖励：5000币</span>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="record col-md-6">
+                <p>
+                    <span>交易记录</span>
+                </p>
+                <div>
+                    <ul id="menu">
+                        <li>全部</li>
+                        <li>自己</li>
+                    </ul>
+                    <div id="menu_content">
+                        <div>
+                            <table class="table" border="1">
+                                <tbody>
+                                    <tr class="first">
+                                        <td>用户名</td>
+                                        <td>操作</td>
+                                        <td>方案</td>
+                                        <td>买入价</td>
+                                        <td>卖出价</td>
+                                    </tr>
+                                    <tr>
+                                        <td>王尼玛</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>艾利doing</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>王尼玛</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>艾利doing</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>王尼玛</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>艾利doing</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>王尼玛</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>艾利doing</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="table" border="1">
+                                <tbody>
+                                    <tr class="first">
+                                        <td>用户名</td>
+                                        <td>操作</td>
+                                        <td>方案</td>
+                                        <td>买入价</td>
+                                        <td>卖出价</td>
+                                    </tr>
+                                    <tr>
+                                        <td>艾利doing</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>艾利doing</td>
+                                        <td>买入</td>
+                                        <td>主胜</td>
+                                        <td>12.25</td>
+                                        <td>25.36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="jogger">
+                        <span class="disabled"> < </span>
+                        <span class="current">1</span>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>...
+                        <a href="#">20</a>
+                        <a href="#"> > </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+            <footer>
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="subscribe-form">
+                                    <span>找我们：</span>
+                                    <form method="get" class="subscribeForm">
+                                        <input id="subscribe" type="text" />
+                                        <input type="submit" id="submitButton" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about">
+                                    <h4 class="footer-title">您的疑问</h4>
+                                    <p>这可行么 
+                                    <br><br>能不能<a rel="nofollow" href="#">分红</a>给合作伙伴</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shop-list">
+                                    <h4 class="footer-title">特色分类</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>可退票</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>可查询票价</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>消费者无亏损</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>实时更新价格</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="more-info">
+                                    <h4 class="footer-title">更多信息</h4>
+                                    <p></p>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>010-58815381</li>
+                                        <li><i class="fa fa-globe"></i>京ICP备15032311号</li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">&copy2014-2015&nbsp&nbspCaiex&nbspRecycle版权所有</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!-- 遮罩层 -->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="keep_overlay" style="display:none;"></div>
+                <div class="box" id="keep_box" style="text-align:center;">
+                    <a class="boxclose" id="keep_boxclose"></a>
+                    <p style="padding:15px; font-size:20px;color:#000;">请确认买几张！</p>
+                    <p class="add">
+                        <span class="modified">-</span>
+                        <span class="number">5</span>
+                        <span class="modified">+</span>
+                    </p>
+                    <p>
+                    	<input type="text" id="bet" value="" />
+                    </p>
+                    <p style="padding:20px;">
+                        <button class="keep_sure">确定</button>
+                        <button class="keep_cancel">取消</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="sell_overlay" style="display:none;"></div>
+                <div class="box" id="sell_box" style="text-align:center;">
+                    <a class="boxclose" id="sell_boxclose"></a>
+                    <p style="padding:15px; font-size:20px;color:#000;">请确认卖出！</p>
+                    <p style="padding:15px; font-size:16px;color:#e85859;">您将收入12.35金币</p>
+                    <p style="padding:20px;">
+                        <button class="sell_sure">确定</button>
+                        <button class="sell_cancel">取消</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="check_overlay" style="display:none;"></div>
+                <div class="box1" id="check_box" style="text-align:center;">
+                    <a class="boxclose1" id="check_boxclose"></a>
+                    <p class="imgbg"><img src="img/sign1.png"></p>
+                    <p class="signbutton"><button>签&nbsp&nbsp&nbsp&nbsp到</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 悬浮二维码 -->
+    <div id="floatPanel">
+        <div class="ctrolPanel" style="left:10px;">
+            <a class="arrow" href="#"><span>顶部</span></a>
+            <a class="qrcode" href="#"><span>微信二维码</span></a>
+            <a class="arrow" href="#"><span>底部</span></a>
+        </div>
+        <div class="popPanel" style="left:50px;">
+            <div class="popPanel-inner">
+                <div class="qrcodePanel"><img src="image/helloweba.png" /><p>扫描二维码用手机看文章</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- 签到 -->
+    <div id="floatPanel1">
+        <div class="ctrolPanel1" style="right:10px;">
+        </div>
+    </div>
+</body>
+</html>

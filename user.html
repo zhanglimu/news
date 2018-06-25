@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>游戏--[caiEX]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/game_style.css">
+        
+<style type="text/css">
+#floatPanel .ctrolPanel{width:36px;height:104px;background:#fff url(image/panel_bg.gif) no-repeat right top;border:solid 1px #ddd;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);}
+#floatPanel1 .ctrolPanel1{width:100px;height:160px;background:url(img/sign.png) no-repeat right top;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);cursor: pointer;}
+</style>
+<script>      //top
+//$(document).ready(function(){
+//	$("#top-header").load("top.html"); 
+//})
+</script>
+<body>
+	<!--<header>        
+		<div id="top-header"></div>
+	</header>-->
+	<header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="home-account">
+                                    <a href="computer_game.html"><img src="img/logo.png" alt="" /></a>
+                                </div>
+                            </div>
+                            <nav class="col-md-8">
+                            	<ul>
+                            		<li><a href="news.html">赛事信息</a></li>
+                            		<li><a href="http://www.caiex.com/caiexWx/oauthServlet?pageName=55">计算器</a></li>
+                            		<li><a href="computer_game.html">游戏</a></li>
+                            		<li><a href="china.html">中超</a></li>
+                            		<li class="deepred"><a href="user.html">个人账户</a></li>
+                            		<li><a href="gifts.html">兑换商品</a></li>
+                            		<li><a href="../CAIEX_pc/index.html">公司介绍</a></li>
+                            	</ul>
+                            </nav>
+                            <div class="col-md-2">
+                                <div class="cart-info">
+                                    <span>你好：<a href="user.html"><span>托特纳姆热刺</span></a></span><br />
+                                    <span>
+                                    	<img src="img/sum.png">
+                                    	<span>6000金币</span>
+                                    </span>
+                                    <span>&nbsp&nbsp<a href="#">登录</a>/<a href="#">注册</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    <article class="container">
+        <section class="container bg">
+            <ul class="naver">
+                    <li>
+                        <span>2016-2-1<i style="display:block">(2场)<em>+350</em></i></span>
+                    </li>
+                    <li class="sss">
+                        <span>2016-2-2<i style="display:block">(3场)<em>-600</em></i></span>
+                    </li>
+                    <li>
+                        <span>2016-2-3<i style="display:block">(1场)<em>-200</em></i></span>
+                    </li>
+                    <li>
+                        <span>2016-2-4<i style="display:block">(2场)<em>+900</em></i></span>
+                    </li>
+                    <li>
+                        <span>2016-2-5<i style="display:block">(3场)<em>+350</em></i></span>
+                    </li>
+                    <li>
+                        <span>2016-2-6<i style="display:block">(2场)<em>+350</em></i></span>
+                    </li>
+                    <li class="last_li" style="border:none;">
+                        <span>2016-2-7<i style="display:block">(2场)<em>+350</em></i></span>
+                    </li>
+                </ul>
+            <div class="team col-md-6">
+                <div class="teamdiv clearfix">
+                    <p class="team_img left">
+                        <img src="img/Mexico.png"><br>
+                        <span>爱尔兰</span>
+                    </p>
+                    <p class="team_time left">
+                        <span class="fontbold">vs</span>
+                        <span class="font">2&nbsp&nbsp:&nbsp&nbsp4</span>
+                        <!-- <span class="font_color">即将开赛</span> -->
+                        <span>2016-1-29&nbsp&nbsp13:25:26</span>
+                    </p>
+                    <p class="team_img right">
+                        <img src="img/Uruguay.png"><br>
+                        <span>爱尔兰</span>
+                    </p>
+                </div>
+                <div class="timeevenbox">
+                    <div class="timemovebox">
+                        <div class="timemove"></div>
+                        <div class="timenodebox">
+                            <div class="timenode">
+                                <span class="timenodein">
+                                    <img class="littlein" src="img/little_gray.png" title="中场">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color" src="img/yellow.png">
+                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color1" src="img/usual.png">
+                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color2" src="img/penalty.png">
+                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodeke">
+                                    <img class="color3" src="img/red.png">
+                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodeke">
+                                    <img class="color4" src="img/yere.png">
+                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="count0">0'</span>
+                    <span class="count90">90'</span>
+                </div>
+                <div>
+                    <img src="img/yellow.png">&nbsp<span>黄牌</span>&nbsp&nbsp
+                    <img src="img/red.png">&nbsp<span>红牌</span>&nbsp&nbsp
+                    <img src="img/usual.png">&nbsp<span>普通球</span>&nbsp&nbsp
+                    <img src="img/penalty.png">&nbsp<span>点球</span>&nbsp&nbsp
+                    <img src="img/yere.png">&nbsp<span>黄变红</span>
+                </div>
+            </div>
+            <div class="selectdrop col-md-6">
+                <div>
+                        <ul id="tab">
+                            <li>自由赛</li>
+                            <li>锦标赛</li>
+                        </ul>
+                        <div id="tab_content">
+                            <div>
+                                <table class="table" border="1">
+                                    <tbody>
+                                        <tr class="first">
+                                            <td>方案</td>
+                                            <td>买入报价</td>
+                                            <td>卖出价</td>
+                                            <td>盈亏额</td>
+                                            <td>是否中奖/金额</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主胜</td>
+                                            <td class="hong">3.25</td>
+                                            <td class="lu">15.36</td>
+                                            <td class="lastup">+12.11</td>
+                                            <td>是/12.36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主胜</td>
+                                            <td class="hong">3.25</td>
+                                            <td class="lu">15.36</td>
+                                            <td class="lastup">+12.11</td>
+                                            <td>否/----</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主胜</td>
+                                            <td class="hong">3.25</td>
+                                            <td class="lu">15.36</td>
+                                            <td class="lastup">+12.11</td>
+                                            <td>是/12.36</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="table" border="1">
+                                    <tbody>
+                                        <tr class="first">
+                                            <td>排名</td>
+                                            <td>奖金</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>3000金币</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="jogger">
+                            <span class="disabled"> < </span>
+                            <span class="current">1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>...
+                            <a href="#">20</a>
+                            <a href="#"> > </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="team col-md-6">
+                <div class="teamdiv clearfix">
+                    <p class="team_img left">
+                        <img src="img/Uruguay.png"><br>
+                        <span>爱尔兰</span>
+                    </p>
+                    <p class="team_time left">
+                        <span class="fontbold">vs</span>
+                        <span class="font">2&nbsp&nbsp:&nbsp&nbsp4</span>
+                        <!-- <span class="font_color">即将开赛</span> -->
+                        <span>2016-1-29&nbsp&nbsp13:25:26</span>
+                    </p>
+                    <p class="team_img right">
+                        <img src="img/Mexico.png"><br>
+                        <span>爱尔兰</span>
+                    </p>
+                </div>
+                <div class="timeevenbox">
+                    <div class="timemovebox">
+                        <div class="timemove"></div>
+                        <div class="timenodebox">
+                            <div class="timenode">
+                                <span class="timenodein">
+                                    <img class="littlein" src="img/little_gray.png" title="中场">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color" src="img/yellow.png">
+                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color1" src="img/usual.png">
+                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodezhu">
+                                    <img class="color2" src="img/penalty.png">
+                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodeke">
+                                    <img class="color3" src="img/red.png">
+                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+                                </span>
+                            </div>
+                            <div class="timenode">
+                                <span class="timenodeke">
+                                    <img class="color4" src="img/yere.png">
+                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="count0">0'</span>
+                    <span class="count90">90'</span>
+                </div>
+                <div>
+                    <img src="img/yellow.png">&nbsp<span>黄牌</span>&nbsp&nbsp
+                    <img src="img/red.png">&nbsp<span>红牌</span>&nbsp&nbsp
+                    <img src="img/usual.png">&nbsp<span>普通球</span>&nbsp&nbsp
+                    <img src="img/penalty.png">&nbsp<span>点球</span>&nbsp&nbsp
+                    <img src="img/yere.png">&nbsp<span>黄变红</span>
+                </div>
+            </div>
+            <div class="selectdrop col-md-6">
+                <div>
+                        <ul id="tabb">
+                            <li>自由赛</li>
+                            <li>锦标赛</li>
+                        </ul>
+                        <div id="tabb_content">
+                            <div>
+                                <table class="table" border="1">
+                                    <tbody>
+                                        <tr class="first">
+                                            <td>方案</td>
+                                            <td>买入报价</td>
+                                            <td>卖出价</td>
+                                            <td>盈亏额</td>
+                                            <td>是否中奖/金额</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主胜</td>
+                                            <td class="hong">3.25</td>
+                                            <td class="lu">15.36</td>
+                                            <td class="lastup">+12.11</td>
+                                            <td>否/----</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主胜</td>
+                                            <td class="hong">3.25</td>
+                                            <td class="lu">15.36</td>
+                                            <td class="lastup">+12.11</td>
+                                            <td>是/12.36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主胜</td>
+                                            <td class="hong">3.25</td>
+                                            <td class="lu">15.36</td>
+                                            <td class="lastup">+12.11</td>
+                                            <td>否/----</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="table" border="1">
+                                    <tbody>
+                                        <tr class="first">
+                                            <td>排名</td>
+                                            <td>奖金</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>3000金币</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="jogger">
+                            <span class="disabled"> < </span>
+                            <span class="current">1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>...
+                            <a href="#">20</a>
+                            <a href="#"> > </a>
+                        </div>
+                    </div>
+            </div>
+            
+        </section>
+    </article>
+            <footer>
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="subscribe-form">
+                                    <span>找我们：</span>
+                                    <form method="get" class="subscribeForm">
+                                        <input id="subscribe" type="text" />
+                                        <input type="submit" id="submitButton" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about">
+                                    <h4 class="footer-title">您的疑问</h4>
+                                    <p>这可行么 
+                                    <br><br>能不能<a rel="nofollow" href="#">分红</a>给合作伙伴</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shop-list">
+                                    <h4 class="footer-title">特色分类</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>可退票</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>可查询票价</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>消费者无亏损</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>实时更新价格</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="more-info">
+                                    <h4 class="footer-title">更多信息</h4>
+                                    <p></p>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>010-58815381</li>
+                                        <li><i class="fa fa-globe"></i>京ICP备15032311号</li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">&copy2014-2015&nbsp&nbspCaiex&nbspRecycle版权所有</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!-- 遮罩层 -->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="check_overlay" style="display:none;"></div>
+                <div class="box1" id="check_box" style="text-align:center;">
+                    <a class="boxclose1" id="check_boxclose"></a>
+                    <p class="imgbg"><img src="img/sign1.png"></p>
+                    <p class="signbutton"><button>签&nbsp&nbsp&nbsp&nbsp到</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 悬浮二维码 -->
+    <div id="floatPanel">
+        <div class="ctrolPanel" style="left:10px;">
+            <a class="arrow" href="#"><span>顶部</span></a>
+            <a class="qrcode" href="#"><span>微信二维码</span></a>
+            <a class="arrow" href="#"><span>底部</span></a>
+        </div>
+        <div class="popPanel" style="left:50px;">
+            <div class="popPanel-inner">
+                <div class="qrcodePanel"><img src="image/helloweba.png" /><p>扫描二维码用手机看文章</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- 签到 -->
+    <div id="floatPanel1">
+        <div class="ctrolPanel1" style="right:10px;">
+        </div>
+    </div>
+</body>
+</html>

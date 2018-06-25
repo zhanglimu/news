@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>游戏--[caiEX]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/game.css">
+<link rel="stylesheet" type="text/css" href="css/news.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/game_style.css">
+
+        
+<style type="text/css">
+#floatPanel .ctrolPanel{width:36px;height:104px;background:#fff url(image/panel_bg.gif) no-repeat right top;border:solid 1px #ddd;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);}
+#floatPanel1 .ctrolPanel1{width:100px;height:160px;background:url(img/sign.png) no-repeat right top;position:fixed;right:25px;top:300px;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);cursor: pointer;}
+</style>
+<body>
+	<header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="home-account">
+                                    <a href="computer_game.html"><img src="img/logo.png" alt="" /></a>
+                                </div>
+                            </div>
+                            <nav class="col-md-8">
+                            	<ul>
+                            		<li class="deepred"><a href="news.html">赛事信息</a></li>
+                            		<li><a href="http://www.caiex.com/caiexWx/oauthServlet?pageName=55">计算器</a></li>
+                            		<li><a href="computer_game.html">游戏</a></li>
+                            		<li><a href="china.html">中超</a></li>
+                            		<li><a href="user.html">个人账户</a></li>
+                            		<li><a href="gifts.html">兑换商品</a></li>
+                            		<li><a href="../CAIEX_pc/index.html">公司介绍</a></li>
+                            		<li class="partner_si"><a href="SI.html"><img src="img/SI/logo.png"/></a></li>
+                            	</ul>
+                            </nav>
+                            <div class="col-md-2">
+                                <div class="cart-info">
+                                    <span>你好：<a href="user.html"><span>托特纳姆热刺</span></a></span><br />
+                                    <span>
+                                    	<img src="img/sum.png">
+                                    	<span>6000金币</span>
+                                    </span>
+                                    <span>&nbsp&nbsp<a href="#">登录</a>/<a href="#">注册</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    <article class="container">
+        <section class="container bg">
+        	<div id="teamBody" class="col-md-8">
+        		<div class="explain">
+	                <img src="img/yellow.png">&nbsp<span>黄牌</span>&nbsp&nbsp
+	                <img src="img/red.png">&nbsp<span>红牌</span>&nbsp&nbsp
+	                <img src="img/usual.png">&nbsp<span>普通球</span>&nbsp&nbsp
+	                <img src="img/penalty.png">&nbsp<span>点球</span>&nbsp&nbsp
+	                <img src="img/yere.png">&nbsp<span>黄变红</span> 
+	                <button class="right lian">联赛</button>
+					<p class="form-group right">
+				        <input type="text" style="width:140px;height: 25px;margin-right: 5px; border-radius: 5px;" class="Wdate" onfocus="WdatePicker({lang:'zh-ch',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+				    </p>
+	                <p class="right ytm" style="width: 25%;">
+						<button>昨天</button>
+						<button>今天</button>
+						<button>明天</button>
+	                </p>
+	            </div>
+	            <div id="ytm_tab">
+		            <div>
+		            	<p class="sport"><span>西甲</span></p>
+			            <div class="teamNews" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <div class="team_time1 left">
+				                    <p>
+				                        <span class="fontbold">2:1</span>
+				                    </p>
+				                    <p class="font_gray">	
+				                        <span>1-29&nbsp&nbsp13:25:26</span>
+				                    </p><br />
+				                    <p>	
+			                        	<span></span>
+				                    </p>
+				                </div>
+			                    <p class="team_img1 right">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png" title="10分钟主队黄牌">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png" title="25分钟主队进球">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png" title="36分钟主队点球">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png" title="74分钟客队红牌牌">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png" title="86分钟客队两张黄牌">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+			            <div class="teamNews1" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <p class="team_time1 left">
+			                        <span class="fontbold">--:--</span>
+			                        <br />
+			                        <span>1-29&nbsp&nbsp13:25:00</span>
+			                    </p>
+			                    <p class="team_img1 right">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png" title="10分钟主队黄牌">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png" title="25分钟主队进球">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png" title="36分钟主队点球">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png" title="74分钟客队红牌牌">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png" title="86分钟客队两张黄牌">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+		            </div>
+		            <div>
+		            	<p class="sport"><span>英超</span></p>
+			            <div class="teamNews" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <p class="team_time1 left">
+			                        <span class="fontbold">--:--</span>
+			                        <br />
+			                        <span>1-29&nbsp&nbsp13:25:00</span>
+			                    </p>
+			                    <p class="team_img1 right">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+			            <div class="teamNews1" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <p class="team_time1 left">
+			                        <span class="fontbold">--:--</span>
+			                        <br />
+			                        <span>1-29&nbsp&nbsp13:25:00</span>
+			                    </p>
+			                    <p class="team_img1 right">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+			        </div>
+			        <div>
+		            	<p class="sport"><span>意甲</span></p>
+			            <div class="teamNews" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <p class="team_time1 left">
+			                        <span class="fontbold">--:--</span>
+			                        <br />
+			                        <span>1-29&nbsp&nbsp13:25:00</span>
+			                    </p>
+			                    <p class="team_img1 right">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+			            <div class="teamNews1" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <p class="team_time1 left">
+			                        <span class="fontbold">--:--</span>
+			                        <br />
+			                        <span>1-29&nbsp&nbsp13:25:00</span>
+			                    </p>
+			                    <p class="team_img1 right">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+			            <p class="sport"><span>中超</span></p>
+			            <div class="teamNews" name="teamBody">
+			                <div class="teamdiv clearfix">
+			                    <p class="team_img1 left">
+			                        <img src="img/Mexico.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                    <p class="team_time1 left">
+			                        <span class="fontbold">--:--</span>
+			                        <br />
+			                        <span>1-29&nbsp&nbsp13:25:00</span>
+			                    </p>
+			                    <p class="team_img1 right">
+			                        <img src="img/Uruguay.png"><br>
+			                        <span>爱尔兰</span>
+			                    </p>
+			                </div>
+			                <div class="timeevenbox1">
+			                    <div class="timemovebox">
+			                        <div class="timemove"></div>
+			                        <div class="timenodebox">
+			                            <div class="timenode">
+			                                <span class="timenodein">
+			                                    <img class="littlein" src="img/little_gray.png" title="中场">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color" src="img/yellow.png">
+			                                    <img class="little" src="img/little.png" title="10分钟主队黄牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color1" src="img/usual.png">
+			                                    <img class="little1" src="img/little.png" title="25分钟主队进球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodezhu">
+			                                    <img class="color2" src="img/penalty.png">
+			                                    <img class="little2" src="img/little.png" title="36分钟主队点球">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color3" src="img/red.png">
+			                                    <img class="little3" src="img/little.png" title="74分钟客队红牌牌">
+			                                </span>
+			                            </div>
+			                            <div class="timenode">
+			                                <span class="timenodeke">
+			                                    <img class="color4" src="img/yere.png">
+			                                    <img class="little4" src="img/little.png" title="86分钟客队两张黄牌">
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <span class="count01">0'</span>
+			                    <span class="count901">90'</span>
+			                </div>
+			            </div>
+			        </div>
+		        </div>
+            </div>
+            
+            <div class="partner col-md-4">
+            	<ul>
+            		<li><a href="SI.html"><img src="img/SI/partner.png"/></a></li>
+            	</ul>
+            	<div class="promote">
+	            	<p>
+	                    <span>其他推荐</span>
+	                    <img class="refreshing right" src="img/refresh.png">
+	                </p>
+	                <span id="gray_left">
+	                	<img src="img/grayleft.png"/>
+	                </span>
+	            	<ul class="left contentUl">
+	            		<li><a href="">周二<em> 比利亚雷亚尔 vs 赫塔菲</em></a></li>
+	            		<li><a href="">周二<em> 拉科鲁尼亚 vs 拉斯帕尔马斯</em></a></li>
+	            		<li><a href="">周三<em> 西汉姆联 vs 马德里竞技</em></a></li>
+	            		<li><a href="">周三<em> 顿涅茨克矿工 vs 布拉加</em></a></li>
+	            		<li><a href="">周四<em> 山东鲁能 vs 延边富德</em></a></li>
+	            		<li><a href="">周五<em> 梅州客家 vs 湖南湘涛</em></a></li>
+	            	</ul>
+	            	<ul class="left contentUl">
+	            		<li><a href="">周二<em> 马德里竞技比利亚雷亚尔 vs 赫塔菲</em></a></li>
+	            		<li><a href="">周二<em> 顿涅茨克矿工拉科鲁尼亚 vs 拉斯帕尔马斯</em></a></li>
+	            		<li><a href="">周三<em> 西汉姆联 vs 比利亚雷亚尔</em></a></li>
+	            		<li><a href="">周三<em> 拉科鲁尼亚 vs 布拉加</em></a></li>
+	            		<li><a href="">周四<em> 山东鲁能 vs 延边富德</em></a></li>
+	            		<li><a href="">周五<em> 梅州客家 vs 湖南湘涛</em></a></li>
+	            	</ul>
+	            	<span id="gray_right">
+	            		<img src="img/grayright.png"/>
+	            	</span>
+	            </div>
+            </div>
+            <!--<div class="promote col-md-4">
+            	<p>
+                    <span>其他推荐</span>
+                    <img class="refreshing right" src="img/refresh.png">
+                </p>
+                <span id="gray_left">
+                	<img src="img/grayleft.png"/>
+                </span>
+            	<ul class="left contentUl">
+            		<li><a href="">周二<em> 比利亚雷亚尔 vs 赫塔菲</em></a></li>
+            		<li><a href="">周二<em> 拉科鲁尼亚 vs 拉斯帕尔马斯</em></a></li>
+            		<li><a href="">周三<em> 西汉姆联 vs 马德里竞技</em></a></li>
+            		<li><a href="">周三<em> 顿涅茨克矿工 vs 布拉加</em></a></li>
+            		<li><a href="">周四<em> 山东鲁能 vs 延边富德</em></a></li>
+            		<li><a href="">周五<em> 梅州客家 vs 湖南湘涛</em></a></li>
+            	</ul>
+            	<ul class="left contentUl">
+            		<li><a href="">周二<em> 马德里竞技比利亚雷亚尔 vs 赫塔菲</em></a></li>
+            		<li><a href="">周二<em> 顿涅茨克矿工拉科鲁尼亚 vs 拉斯帕尔马斯</em></a></li>
+            		<li><a href="">周三<em> 西汉姆联 vs 比利亚雷亚尔</em></a></li>
+            		<li><a href="">周三<em> 拉科鲁尼亚 vs 布拉加</em></a></li>
+            		<li><a href="">周四<em> 山东鲁能 vs 延边富德</em></a></li>
+            		<li><a href="">周五<em> 梅州客家 vs 湖南湘涛</em></a></li>
+            	</ul>
+            	<span id="gray_right">
+            		<img src="img/grayright.png"/>
+            	</span>
+            </div>-->
+        </section>
+    </article>
+            <footer>
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="subscribe-form">
+                                    <span>找我们：</span>
+                                    <form method="get" class="subscribeForm">
+                                        <input id="subscribe" type="text" />
+                                        <input type="submit" id="submitButton" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about">
+                                    <h4 class="footer-title">您的疑问</h4>
+                                    <p>这可行么 
+                                    <br><br>能不能<a rel="nofollow" href="#">分红</a>给合作伙伴</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shop-list">
+                                    <h4 class="footer-title">特色分类</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>可退票</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>可查询票价</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>消费者无亏损</li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a>实时更新价格</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="more-info">
+                                    <h4 class="footer-title">更多信息</h4>
+                                    <p></p>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>010-58815381</li>
+                                        <li><i class="fa fa-globe"></i>京ICP备15032311号</li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">&copy2014-2015&nbsp&nbspCaiex&nbspRecycle版权所有</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!-- 遮罩层 -->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="check_overlay" style="display:none;"></div>
+                <div class="box1" id="check_box" style="text-align:center;">
+                    <a class="boxclose1" id="check_boxclose"></a>
+                    <p class="imgbg"><img src="img/sign1.png"></p>
+                    <p class="signbutton"><button>签&nbsp&nbsp&nbsp&nbsp到</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 悬浮二维码 -->
+    <div id="floatPanel">
+        <div class="ctrolPanel" style="left:10px;">
+            <a class="arrow" href="#"><span>顶部</span></a>
+            <a class="qrcode" href="#"><span>微信二维码</span></a>
+            <a class="arrow" href="#"><span>底部</span></a>
+        </div>
+        <div class="popPanel" style="left:50px;">
+            <div class="popPanel-inner">
+                <div class="qrcodePanel"><img src="image/helloweba.png" /><p>扫描二维码用手机看文章</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- 签到 -->
+    <div id="floatPanel1">
+        <div class="ctrolPanel1" style="right:10px;">
+        </div>
+    </div>
+    <!--联赛-->
+    <div id="page-wrap">
+        <div id="content-wrap">     
+            <div id="content-left" class="demo">
+                <div class="overlay" id="lian_overlay" style="display:none;"></div>
+                <div class="box2" id="lian_box" style="text-align:center;">
+                    <a class="boxclose1" id="lian_boxclose"></a>
+                    <ul class="clearfix">
+                    	<li><span>英超</span></li>
+                    	<li><span>西甲</span></li>
+                    	<li><span>中超</span></li>
+                    	<li><span>意甲</span></li>
+                    	<li><span>德甲</span></li>
+                    	<li><span>欧联</span></li>
+                    	<li><span>英超</span></li>
+                    	<li><span>西甲</span></li>
+                    	<li><span>中超</span></li>
+                    	<li><span>意甲</span></li>
+                    	<li><span>德甲</span></li>
+                    	<li><span>欧联</span></li>
+                    	<li><span>英超</span></li>
+                    	<li><span>西甲</span></li>
+                    	<li><span>中超</span></li>
+                    	<li><span>意甲</span></li>
+                    	<li><span>德甲</span></li>
+                    	<li><span>欧联</span></li>
+                    </ul>
+                    <p style="padding: 20px;">
+	                    <button class="lian_cancle">取消</button>
+	                    <button class="lian_sure">确认</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+!function(){
+	laydate.skin('dahong');//切换皮肤，请查看skins下面皮肤库
+	laydate({elem: '#demo'});//绑定元素
+}();
+
+//自定义日期格式
+laydate({
+    elem: '#test1',
+    format: 'YYYY年MM月DD日',
+    festival: true, //显示节日
+    // choose: function(datas){ //选择日期完毕的回调
+    //     alert('得到：'+datas);
+    // }
+});
+</script>
+<script>
+$(document).ready(function(){    
+     //向左按钮点击事件
+     var index = 0;
+     var liLen;
+     $("#gray_left").click(function(){
+         index++;
+         liLen = $("ul.contentUl li").length;  //目前长度返回值为6
+		  if(index >= 4)
+         {
+             $("ul.contentUl").stop();
+             alert("已经到达最后一页！");
+             index = 3;
+         }else{
+             if(index == 1)
+             {
+                 $("ul.contentUl").animate({left:-(index*330)},700);
+                 alert("a")
+             }else{
+                 $("ul.contentUl").animate({left:-index*305},700);
+             }
+        }
+     });
+     //向右按钮点击事件
+     $("#gray_right").click(function(){
+         if(index == 0)
+         {
+             $("ul.contentUl").stop();
+             alert("这是第一页，不能再往前翻了！");
+         }else{
+             index--;
+             if(index == 0)
+             {
+                $("ul.contentUl").animate({left:-40},700);
+             }else{
+                 $("ul.contentUl").animate({left:-index*310},700);
+             }
+         }
+     });
+});
+</script>
+</body>
+</html>
+
